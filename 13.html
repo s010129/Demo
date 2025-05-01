@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Live - TNRFeeder</title>
+  <style>
+    /* 讓頁面撐滿高度並推 footer 底部 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #ffe4e1;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    /* 回首頁按鈕樣式 */
+    .logo-btn {
+      background-color: #BDB76B; /* 深卡其 */
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+    /* 嵌入 YouTube 影片容器 */
+    .video-container {
+      width: 100%;
+      max-width: 600px;
+      margin-bottom: 20px;
+    }
+    .video-container iframe {
+      width: 100%;
+      height: 315px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    /* 捐款按鈕 */
+    .donate-btn {
+      background-color: #ffb6b9;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 20px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    footer {
+      background-color: #ffe4e1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-btn">回首頁</a>
+</header>
+
+<main>
+  <div class="video-container">
+    <iframe
+      src="https://www.youtube.com/embed/lj9GkhkP3P4
+"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen>
+    </iframe>
+  </div>
+  <button class="donate-btn" id="donate-btn">捐款餵食</button>
+</main>
+
+<footer>
+  <p>© 2025 TNRFeeder. All Rights Reserved.</p>
+</footer>
+
+<script>
+  document.getElementById('donate-btn').addEventListener('click', function() {
+    alert('感謝餵食');
+  });
+</script>
+
+</body>
+</html>

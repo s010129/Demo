@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Terms of Service - TNRFeeder</title>
+  <style>
+    /* 讓頁面撐滿高度並推 footer 底部 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #ffe4e1;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    /* 回首頁按鈕樣式 */
+    .logo-btn {
+      background-color: #BDB76B; /* 深卡其 */
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* 讓文字跟圖片維持在上方 */
+      padding: 20px;
+    }
+    /* 外層置中並定義最大寬度 */
+    .image-wrapper {
+      max-width: 90%;
+      margin: 0 auto;       /* 左右自動置中 */
+      text-align: center;   /* 文字與圖片置中 */
+      padding: 20px 0;      /* 上下間距 */
+    }
+    /* 圖片上方的文字 */
+    .image-caption {
+      margin-bottom: 10px;  /* 文字到圖片的距離 */
+      font-size: 1.2rem;    /* 字體大小 */
+      color: #333;          /* 文字顏色 */
+      font-weight: bold;    /* 粗體 */
+    }
+    .image-container {
+      overflow: hidden;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+    }
+    .image-container img:active {
+      transform: scale(2);
+      cursor: zoom-out;
+    }
+    footer {
+      background-color: #ffe4e1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-btn">回首頁</a>
+</header>
+
+<main>
+  <div class="image-wrapper">
+    <!-- 圖片外、上方的文字 -->
+    <div class="image-caption">這是一個模擬手機APP的網頁，並未連接餵食機，影片內容皆來自youtube，若未來時間、金費充足，我們可以做出能實際運作的機器並連接網頁跟APP，拯救那些挨餓的動物們，以及解決流浪動物衍生的問題，這些都需要你們的支持，謝謝!</div>
+    <!-- 圖片本體 -->
+  
+
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 TNRFeeder. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

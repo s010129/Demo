@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - TNRFeeder</title>
+  <style>
+    /* 讓頁面撐滿高度並推 footer 底部 */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background-color: #ffe4e1;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+    }
+    /* 回首頁按鈕樣式 */
+    .logo-btn {
+      background-color: #BDB76B; /* 深卡其 */
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 20px;
+      text-decoration: none;
+      font-weight: bold;
+      cursor: pointer;
+      display: inline-block;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start; /* 讓文字跟圖片維持在上方 */
+      padding: 20px;
+    }
+    /* 外層置中並定義最大寬度 */
+    .image-wrapper {
+      max-width: 90%;
+      margin: 0 auto;       /* 左右自動置中 */
+      text-align: center;   /* 文字與圖片置中 */
+      padding: 20px 0;      /* 上下間距 */
+    }
+    /* 圖片上方的文字 */
+    .image-caption {
+      margin-bottom: 10px;  /* 文字到圖片的距離 */
+      font-size: 1.2rem;    /* 字體大小 */
+      color: #333;          /* 文字顏色 */
+      font-weight: bold;    /* 粗體 */
+    }
+    .image-container {
+      overflow: hidden;
+    }
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      cursor: zoom-in;
+      transition: transform 0.3s ease;
+    }
+    .image-container img:active {
+      transform: scale(2);
+      cursor: zoom-out;
+    }
+    footer {
+      background-color: #ffe4e1;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      border-top: 1px solid #ccc;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo-btn">回首頁</a>
+</header>
+
+<main>
+  <div class="image-wrapper">
+    <!-- 圖片外、上方的文字 -->
+    <div class="image-caption">三個臭皮匠</div>
+    <!-- 圖片本體 -->
+  <table class="team-table" border="1" cellspacing="0" cellpadding="8">
+  <caption>團隊成員</caption>
+  <thead>
+    <tr>
+      <th>職稱</th>
+      <th>姓名</th>
+      <th>院、所、系、學程名稱</th>
+      <th>年級</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>指導老師</td>
+    <td>洪耀正</td>
+    <td>
+      通識教育中心<br>
+      電機工程學系
+    </td>
+    <td></td> <!-- 老師不填 -->
+  </tr>
+  <tr>
+    <td>學生</td>
+    <td>劉庭瑜</td>
+    <td>光電科學與工程學系</td>
+    <td>1</td> <!-- 學生年級 1 -->
+  </tr>
+  <tr>
+    <td>學生</td>
+    <td>林澤毅</td>
+    <td>電機工程學系</td>
+    <td>1</td> <!-- 學生年級 1 -->
+  </tr>
+  <tr>
+    <td>學生</td>
+    <td>黎志宣</td>
+    <td>電機工程學系</td>
+    <td>1</td> <!-- 學生年級 1 -->
+  </tr>
+</tbody>
+
+</table>
+ <div class="image-caption">手機：0937223058</div>
+ <div class="image-caption">Email：FCU.Makerclub@gmail.com</div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 TNRFeeder. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
